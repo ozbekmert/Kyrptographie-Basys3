@@ -1,21 +1,6 @@
-----------------------------------------------------------------------------------
--- COPYRIGHT (c) 2017 ALL RIGHT RESERVED
---
--- KRYPTOGRAPHIE AUF PROGRAMMIERBARER HARDWARE: UEBUNG 4
--- AUTHOR: PASCAL SASDRICH
-----------------------------------------------------------------------------------
-
-
-
--- IMPORTS
-----------------------------------------------------------------------------------
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
-
-
--- ENTITY
-----------------------------------------------------------------------------------
 ENTITY ShiftRegister IS
     GENERIC (SIZE : POSITIVE := 8);
     PORT ( CLK  : IN  STD_LOGIC;
@@ -26,14 +11,8 @@ ENTITY ShiftRegister IS
            PLAINTEXT : IN STD_LOGIC_VECTOR((SIZE - 1) DOWNTO 0)
 );
 END ShiftRegister;
-
-
--- ARCHITECTURE: BEHAVIORAL
-----------------------------------------------------------------------------------
 ARCHITECTURE Behavioral OF ShiftRegister IS
 
--- SIGNALS
-----------------------------------------------------------------------------------
 SIGNAL STATE : STD_LOGIC_VECTOR((SIZE - 1) DOWNTO 0) := (OTHERS => '0');
 
 BEGIN
