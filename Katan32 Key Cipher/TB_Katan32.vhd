@@ -1,31 +1,11 @@
-----------------------------------------------------------------------------------
--- COPYRIGHT (c) 2017 ALL RIGHT RESERVED
---
--- KRYPTOGRAPHIE AUF PROGRAMMIERBARER HARDWARE: UEBUNG 5
--- AUTHOR: PASCAL SASDRICH, Florian Bache
-----------------------------------------------------------------------------------
-
-
-
--- IMPORTS
-----------------------------------------------------------------------------------
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
-
-
--- ENTITY
-----------------------------------------------------------------------------------
 ENTITY TB_Katan32 IS
 END TB_Katan32;
 
-
-
--- ARCHITECTURE: TESTBENCH
-----------------------------------------------------------------------------------
 ARCHITECTURE Testbench OF TB_Katan32 IS
 
-    -- COMPONENTS ----------------------------------------------------------------
     COMPONENT Katan32 IS
         PORT ( CLK          : IN    STD_LOGIC;
                RESET        : IN    STD_LOGIC;
@@ -47,12 +27,10 @@ ARCHITECTURE Testbench OF TB_Katan32 IS
     SIGNAL DONE         : STD_LOGIC;
     SIGNAL CIPHERTEXT   : STD_LOGIC_VECTOR(31 DOWNTO 0);
 
-    -- CLOCK PERIOD --------------------------------------------------------------
     CONSTANT CLK_PERIOD : TIME := 10 NS;
     
 BEGIN
 
-    -- UNIT UNDER TEST -----------------------------------------------------------
     UUT : Katan32
     PORT MAP (
         CLK         => CLK,
