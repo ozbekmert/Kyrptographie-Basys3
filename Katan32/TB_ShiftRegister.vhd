@@ -1,27 +1,11 @@
-----------------------------------------------------------------------------------
--- COPYRIGHT (c) 2015 ALL RIGHT RESERVED
---
--- KRYPTOGRAPHIE AUF PROGRAMMIERBARER HARDWARE: UEBUNG 4
--- AUTHOR: PASCAL SASDRICH
-----------------------------------------------------------------------------------
-
-
-
--- IMPORTS
-----------------------------------------------------------------------------------
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
-
-
--- ENTITY
-----------------------------------------------------------------------------------
 ENTITY TB_ShiftRegister IS
 END TB_ShiftRegister;
 
 ARCHITECTURE Behavioral OF TB_ShiftRegister IS
 
-    -- COMPONENTS ----------------------------------------------------------------
     COMPONENT shift_ref IS
         GENERIC (SIZE : POSITIVE :=8 );
         PORT ( CLK  : IN  STD_LOGIC;
