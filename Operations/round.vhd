@@ -1,21 +1,7 @@
-----------------------------------------------------------------------------------
--- COPYRIGHT (c) 2014 ALL RIGHT RESERVED
---
--- KRYPTOGRAPHIE AUF PROGRAMMIERBARER HARDWARE: UEBUNG 9
-----------------------------------------------------------------------------------
-
-
-
--- IMPORTS
-----------------------------------------------------------------------------------
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
 
-
-
--- ENTITY
-----------------------------------------------------------------------------------
 ENTITY Round IS
 	PORT ( CLK 		: IN  STD_LOGIC;
 			 RST 		: IN  STD_LOGIC;
@@ -50,14 +36,8 @@ END Round;
 
 
 
--- ARCHITECTURE
-----------------------------------------------------------------------------------
 ARCHITECTURE Behavioral OF Round IS
 
-
-
--- COMPONENTS
-----------------------------------------------------------------------------------
 COMPONENT Functions IS
 	PORT ( CLK	: IN  STD_LOGIC;
          RST    : IN  STD_LOGIC;
