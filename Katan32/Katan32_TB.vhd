@@ -1,31 +1,10 @@
-----------------------------------------------------------------------------------
--- COPYRIGHT (c) 2016 ALL RIGHT RESERVED
---
--- KRYPTOGRAPHIE AUF PROGRAMMIERBARER HARDWARE: UEBUNG 2
--- AUTHOR: TOBIAS ODER
-----------------------------------------------------------------------------------
-
-
-
--- IMPORTS
-----------------------------------------------------------------------------------
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
-
-
--- ENTITY
-----------------------------------------------------------------------------------
 ENTITY Katan32_TB IS
 END Katan32_TB;
 
-
-
--- ARCHITECTURE: TESTBENCH
-----------------------------------------------------------------------------------
 ARCHITECTURE Testbench OF Katan32_TB IS
-
-    -- COMPONENTS ----------------------------------------------------------------
     COMPONENT Katan32 IS
         PORT ( CLK  : IN  STD_LOGIC;
                EN   : IN  STD_LOGIC;
